@@ -9,3 +9,14 @@
 This is the official implementation of our paper [TFMQ-DM](https://arxiv.org/abs/2311.16503), which has been accepted to CVPR 2024.
 
 The code will be released soon🚀 .
+
+## Citation
+If you TFMQ-DM useful or relevant to your research, please kindly cite our paper:
+
+```
+@inproceedings{huang2024tfmqdm,
+  title={TFMQ-DM: Temporal Feature Maintenance Quantization for Diffusion Models}, 
+  author={Yushi Huang and Ruihao Gong and Jing Liu and Tianlong Chen and Xianglong Liu},
+  booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024}
+}
