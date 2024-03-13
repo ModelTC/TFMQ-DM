@@ -1,4 +1,5 @@
 # TFMQ-DM: Temporal Feature Maintenance Quantization for Diffusion Models
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
 [![arXiv](https://img.shields.io/badge/TFMQ--DM-2311.16503-b31b1b)](https://arxiv.org/abs/2311.16503)
 [![GitHub Stars](https://img.shields.io/github/stars/ModelTC/TFMQ-DM.svg?style=social&label=Star&maxAge=60)](https://github.com/ModelTC/TFMQ-DM)
 
@@ -11,7 +12,7 @@ This is the official implementation of our paper [TFMQ-DM](https://arxiv.org/abs
 The code will be released soon🚀 .
 
 ## Citation
-If you TFMQ-DM useful or relevant to your research, please kindly cite our paper:
+If you find our TFMQ-DM useful or relevant to your research, please kindly cite our paper:
 
 ```
 @inproceedings{huang2024tfmqdm,
