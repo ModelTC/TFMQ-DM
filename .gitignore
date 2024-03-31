@@ -1,0 +1,9 @@
+trace
+__pycache__
+*.ckpt
+*.pth
+*.pt
+*.log
+*.DS_Store
+.vscode
+*.idea
