@@ -74,7 +74,7 @@ mv sd-v1-4.ckpt ./stable-diffusion/models/ldm/stable-diffusion-v1/sd-v1-4.ckpt
 
 In this part, we will first generate some calibration data before quantizing. Alternatively, you can generate calibration data separately by adding `torch.save` in the script, and quantize when needed by adding `torch.load` and commenting out the code for generating calibration data.
 
-If you want to quantize your diffusion models on multiple GPUs, add `--multi_gpu` to the corresponding command, except for `DDIM` and `LDM-4` on `ImageNet`. Additionally, you can remove `--use_aq`，`--aq 8` to cancel activation quantization.
+If you want to quantize your diffusion models on multiple GPUs, add `--multi_gpu` to the corresponding command, except for `DDIM`. Additionally, you can remove `--use_aq`，`--aq 8` to cancel activation quantization.
 
 #### DDIM
 
