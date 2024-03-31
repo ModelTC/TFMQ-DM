@@ -72,7 +72,7 @@ mv sd-v1-4.ckpt ./stable-diffusion/models/ldm/stable-diffusion-v1/sd-v1-4.ckpt
 
 ### Quantization
 
-In this part, we will first generate a certain amount of calibration data before proceeding with quantization. Alternatively, you can generate calibration data separately by adding `torch.save` in the script, and quantize when needed by adding `torch.load` and commenting out the code for generating calibration data.
+In this part, we will first generate some calibration data before quantizing. Alternatively, you can generate calibration data separately by adding `torch.save` in the script, and quantize when needed by adding `torch.load` and commenting out the code for generating calibration data.
 
 If you want to quantize your diffusion models on multiple GPUs, add `--multi_gpu` to the corresponding command, except for `DDIM` and `LDM-4` on `ImageNet`. Additionally, you can remove `--use_aq`，`--aq 8` to cancel activation quantization.
 
@@ -198,7 +198,7 @@ python txt2img.py \
 
 ### Inference
 
-After quantization process, you can generate images you like. You can remove `--use_aq`，`--aq 8` to cancel activation quantization.
+After the quantization process, you can generate images you like. You can remove `--use_aq`，`--aq 8` to cancel activation quantization.
 
 #### DDIM
 
@@ -323,7 +323,7 @@ python txt2img.py \
 
 Our code was developed based on [ddim](https://github.com/ermongroup/ddim), [latent-diffusion](https://github.com/CompVis/latent-diffusion) and [stable-diffusion](https://github.com/CompVis/stable-diffusion). We referred to [BRECQ](https://github.com/yhhhli/BRECQ) and [Q-Diffusion](https://github.com/Xiuyu-Li/q-diffusion) for the blockwise calibration implementation.
 
-We thank [OpenVINO](https://github.com/openvinotoolkit/openvino) for providing the framework to deploy our quantized model and measure the acceleration. Moreover, we also thank [torch-fidelity](https://github.com/toshas/torch-fidelity) and  [guided-diffusion](https://github.com/openai/guided-diffusion) for IS, sFID and FID computation.
+We thank [OpenVINO](https://github.com/openvinotoolkit/openvino) for providing the framework to deploy our quantized model and measure acceleration. Moreover, we also thank [torch-fidelity](https://github.com/toshas/torch-fidelity) and  [guided-diffusion](https://github.com/openai/guided-diffusion) for IS, sFID and FID computation.
 
 ## Citation
 
