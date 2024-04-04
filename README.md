@@ -23,7 +23,7 @@ This is the official implementation of our paper [TFMQ-DM](https://arxiv.org/abs
 
 * **2024/3/31**: 🔥 We release our Python code for quantizing all the models presented in our paper. Have a try!
 
-* **2024/2/27**: 🌟 Our paper has been accepted by CVPR2024!🎉 Cheers!
+* **2024/2/27**: 🌟 Our paper has been accepted by CVPR2024! 🎉 Cheers!
 
 ## Overview
 
