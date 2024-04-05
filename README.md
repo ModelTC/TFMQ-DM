@@ -21,7 +21,7 @@ This is the official implementation of our paper [TFMQ-DM](https://arxiv.org/abs
 
 ## News
 
-* **2024/4/5**: 🌟 Our paper has been selected as a highlight at CVPR 2024 (only top 2.8% out of over 11532 valid paper submissions)! 🎉 Cheers!
+* **2024/4/5**: 🌟 Our paper has been selected as a **highlight** poster at CVPR 2024 (only top 2.8% out of over 11532 valid paper submissions)! 🎉 Cheers!
 
 * **2024/3/31**: 🔥 We release our Python code for quantizing all the models presented in our paper. Have a try!
 
