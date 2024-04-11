@@ -92,7 +92,7 @@ python sample_diffusion_ddim.py \
   	-l <PATH/TO/SAVE/LOG> \
   	--cali \
   	--use_aq \
-  	--cali_save_path <PATH/TO/SAVE/QUTIZED/MODEL> \
+  	--cali_save_path <PATH/TO/SAVE/QUANTIZED/MODEL> \
   	--interval_length 5
 ```
 
@@ -111,7 +111,7 @@ python sample_diffusion_ldm.py \
   	-l <PATH/TO/SAVE/LOG> \
   	--cali \
   	--use_aq \
-  	--cali_save_path <PATH/TO/SAVE/QUTIZED/MODEL> \
+  	--cali_save_path <PATH/TO/SAVE/QUANTIZED/MODEL> \
   	--interval_length 10
 
 # LSUN-Churches
@@ -126,7 +126,7 @@ python sample_diffusion_ldm.py \
   	-l <PATH/TO/SAVE/LOG> \
   	--cali \
   	--use_aq \
-  	--cali_save_path <PATH/TO/SAVE/QUTIZED/MODEL> \
+  	--cali_save_path <PATH/TO/SAVE/QUANTIZED/MODEL> \
   	--interval_length 25
 
 # CelebA-HQ
@@ -141,7 +141,7 @@ python sample_diffusion_ldm.py \
   	-l <PATH/TO/SAVE/LOG> \
   	--cali \
   	--use_aq \
-  	--cali_save_path <PATH/TO/SAVE/QUTIZED/MODEL> \
+  	--cali_save_path <PATH/TO/SAVE/QUANTIZED/MODEL> \
   	--interval_length 10
 
 # FFHQ
@@ -156,7 +156,7 @@ python sample_diffusion_ldm.py \
   	-l <PATH/TO/SAVE/LOG> \
   	--cali \
   	--use_aq \
-  	--cali_save_path <PATH/TO/SAVE/QUTIZED/MODEL> \
+  	--cali_save_path <PATH/TO/SAVE/QUANTIZED/MODEL> \
   	--interval_length 10
 
 # ImageNet
@@ -171,7 +171,7 @@ python latent_imagenet_diffusion.py \
   	--outdir <PATH/TO/SAVE/LOG> \
   	--cali \
   	--use_aq \
-  	--cali_save_path <PATH/TO/SAVE/QUTIZED/MODEL>
+  	--cali_save_path <PATH/TO/SAVE/QUANTIZED/MODEL>
 ```
 
 #### Stable Diffusion
@@ -195,7 +195,7 @@ python txt2img.py \
   	--ckpt ./stable-diffusion/models/ldm/stable-diffusion-v1/sd-v1-4.ckpt \
   	--config stable-diffusion/configs/stable-diffusion/v1-inference.yaml \
   	--data_path <PATH/TO/LOAD/DATA> \
-  	--cali_save_path <PATH/TO/SAVE/QUTIZED/MODEL>
+  	--cali_save_path <PATH/TO/SAVE/QUANTIZED/MODEL>
 ```
 
 ### Inference
@@ -215,7 +215,7 @@ python sample_diffusion_ddim.py \
   	--aq 8 \
   	-l <PATH/TO/SAVE/RESULT> \
   	--use_aq \
-  	--cali_save_path <PATH/TO/LOAD/QUTIZED/MODEL> \
+  	--cali_save_path <PATH/TO/LOAD/QUANTIZED/MODEL> \
   	--max_images 128
 ```
 
@@ -233,7 +233,7 @@ python sample_diffusion_ldm.py \
   	--aq 8 \
   	-l <PATH/TO/SAVE/RESULT> \
   	--use_aq \
-  	--cali_ckpt <PATH/TO/LOAD/QUTIZED/MODEL> \
+  	--cali_ckpt <PATH/TO/LOAD/QUANTIZED/MODEL> \
   	-n 5 \
   	--batch_size 5
 
@@ -248,7 +248,7 @@ python sample_diffusion_ldm.py \
   	--aq 8 \
   	-l <PATH/TO/SAVE/RESULT> \
   	--use_aq \
-  	--cali_ckpt <PATH/TO/LOAD/QUTIZED/MODEL> \
+  	--cali_ckpt <PATH/TO/LOAD/QUANTIZED/MODEL> \
   	-n 5 \
   	--batch_size 5
 
@@ -263,7 +263,7 @@ python sample_diffusion_ldm.py \
   	--aq 8 \
   	-l <PATH/TO/SAVE/RESULT> \
   	--use_aq \
-  	--cali_ckpt <PATH/TO/LOAD/QUTIZED/MODEL> \
+  	--cali_ckpt <PATH/TO/LOAD/QUANTIZED/MODEL> \
   	-n 5 \
   	--batch_size 5
 
@@ -278,7 +278,7 @@ python sample_diffusion_ldm.py \
   	--aq 8 \
   	-l <PATH/TO/SAVE/RESULT> \
   	--use_aq \
-  	--cali_ckpt <PATH/TO/LOAD/QUTIZED/MODEL> \
+  	--cali_ckpt <PATH/TO/LOAD/QUANTIZED/MODEL> \
   	-n 5 \
   	--batch_size 5
 
@@ -293,7 +293,7 @@ python latent_imagenet_diffusion.py \
   	--aq 8 \
   	--outdir <PATH/TO/SAVE/RESULT>  \
   	--use_aq \
-  	--cali_ckpt <PATH/TO/LOAD/QUTIZED/MODEL> \
+  	--cali_ckpt <PATH/TO/LOAD/QUANTIZED/MODEL> \
   	--n_sample_per_class 2 \
   	--classes <CLASSES. e.g. 7,489,765>
 ```
@@ -318,7 +318,7 @@ python txt2img.py \
   	--use_aq \
   	--ckpt ./stable-diffusion/models/ldm/stable-diffusion-v1/sd-v1-4.ckpt \
   	--config stable-diffusion/configs/stable-diffusion/v1-inference.yaml \
-  	--cali_ckpt <PATH/TO/LOAD/QUTIZED/MODEL>
+  	--cali_ckpt <PATH/TO/LOAD/QUANTIZED/MODEL>
 ```
 
 ## Acknowledgments
