@@ -52,28 +52,44 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">TFMQ-DM: Temporal Feature Maintenance Quantization for Diffusion Models</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://github.com/Harahan" target="_blank">Yushi Huang</a><sup>1,2*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://xhplus.github.io/" target="_blank">Ruihao Gong</a><sup>1,2*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://jing-liu.com/" target="_blank">Jing Liu</a><sup>2,3</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://tianlong-chen.github.io/" target="_blank">Tianlong Chen</a><sup>4</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://xlliu-beihang.github.io/" target="_blank">Xianglong Liu</a><sup>1📧</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Beihang University<sup>1</sup>,</span>
+                    <span class="author-block">SenseTime Research<sup>2</sup>,</span>
+                    <span class="author-block">Monash University<sup>3</sup></span>
+                    <span class="author-block">UT Austin<sup>4</sup></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="paper-block"><b>CVPR 2024 Highlight </b><b style="color:#d31313;">(Acceptence Rate 2.8%)</b><br>
+                    <span class="author-block">*Equal Contribution, 📧Corresponding Author</span><br>
+                    <span class="author-block"><a href="mailto:huangyushi@sensetime.com">huangyushi@sensetime.com</a>,</span>
+                    <span class="author-block"><a href="mailto:gongruihao@sensetime.com">gongruihao@sensetime.com</a>,</span>
+                    <span class="author-block"><a href="liujing5@sensetime.com">liujing5@sensetime.com</a>,</span><br>
+                    <span class="author-block"><a href="tianlong.chen@utexas.edu">tianlong.chen@utexas.edu</a>,</span>
+                    <span class="author-block"><a href="xlliu@buaa.edu.cn">xlliu@buaa.edu.cn</span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2311.16503" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -83,7 +99,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,11 +107,11 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/ModelTC/TFMQ-DM" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -106,7 +122,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2311.16503" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -123,22 +139,26 @@
 </section>
 
 
-<!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      <img id="teaser" width="100%" src="static/images/overview.png" style="display: block; margin: auto;">
+
+      <h2 class="content has-text-justified">
+        In <b>TFMQ-DM</b>, our contributions are as follows:
+       
+        <b>1) </b>we discover that existing quantization methods suffer from temporal feature disturbance, disrupting the denoising trajectory of diffusion models and significantly affecting the quality of generated images. 
+        
+        <b>2) </b>We reveal that the disturbance comes from two aspects: inappropriate reconstruction target and unaware of finite activations. Both inducements ignore the special characteristics of time information-related modules。 
+        
+        <b>3) </b>An advanced framework (TFMQ-DM) is proposed, consisting of temporal information aware reconstruction (TIAR) for weight quantization and finite set calibration (FSC) for activation quantization. Both are based on a Temporal Information Block specially devised for diffusion models.
+       
+        <b>4) </b>Extensive experiments on various datasets show that our novel framework achieves a new state-of-the-art result in PTQ of diffusion models, especially under 4-bit weight quantization, and significantly accelerates quantization time. For some hard tasks, e.g., CelebA-HQ 256 × 256, our method reduces the FID score by 6.71
+    </h2>
+    
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,8 +168,27 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            The Diffusion model, a prevalent framework for image
+        generation, encounters significant challenges in terms of
+        broad applicability due to its extended inference times and
+        substantial memory requirements. Efficient Post-training
+        Quantization (PTQ) is pivotal for addressing these issues in
+        traditional models. Different from traditional models, diffusion models heavily depend on the time-step t to achieve
+        satisfactory multi-round denoising. Usually, t from the finite set {1, . . . , T} is encoded to a temporal feature by a
+        few modules totally irrespective of the sampling data. However, existing PTQ methods do not optimize these modules
+        separately. They adopt inappropriate reconstruction targets
+        and complex calibration methods, resulting in a severe disturbance of the temporal feature and denoising trajectory,
+        as well as a low compression efficiency. To solve these,
+        we propose a Temporal Feature Maintenance Quantization
+        (TFMQ) framework building upon a Temporal Information
+        Block which is just related to the time-step t and unrelated
+        to the sampling data. Powered by the pioneering block design, we devise temporal information aware reconstruction
+        (TIAR) and finite set calibration (FSC) to align the fullprecision temporal features in a limited time. Equipped with
+        the framework, we can maintain the most temporal information and ensure the end-to-end generation quality. Extensive experiments on various datasets and diffusion models
+        prove our state-of-the-art results. Remarkably, our quantization approach, for the first time, achieves model performance nearly on par with the full-precision model under
+        4-bit weight quantization. Additionally, our method incurs
+        almost no extra computational cost and accelerates quantization time by 2.0× on LSUN-Bedrooms 256 × 256 compared to previous works. 
+</p>
         </div>
       </div>
     </div>
@@ -157,128 +196,151 @@
 </section>
 <!-- End paper abstract -->
 
-
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Visualization Results<br></h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+      
+      <div class="columns is-centered has-text-centered" style="color: gray; font-size: small;">
+        <h4> (The full-precision images are depicted in the upper line, and the images generated by quantized models are shown in the lower lines)</h4>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
+      <div id="results-carousel">
+       <table><tr>
+        <td><div class="item">
+          <!-- Your image here -->
+          
+          <center>
+            <img src="static/images/vis-1_00.png" style="width: 80%;" alt="MY ALT TEXT"/>
+          </center>
+          
+          <h4 class="subtitle is-6 has-text-centered" style="margin-bottom: 1.5em;">
+            Random samples from w4a8 quantized and full-precision LDM-4 on CelebA-HQ 256 × 256. The resolution of each sample is
+  256 × 256.
+          </h4>
+        </div></td>
+        <td><div class="item">
+          <!-- Your image here -->
+          
+          <center>
+            <img src="static/images/vis-2_00.png" style="width: 80%;" alt="MY ALT TEXT"/>
+          </center>
+          
+          <h4 class="subtitle is-6 has-text-centered" style="margin-bottom: 1.5em;">
+            Random samples from w4a8 quantized and full-precision LDM-4 on FFHQ 256 × 256. The resolution of each sample is
+  256 × 256.
+          </h4>
+        </div></td>
+       </tr></table>
+       
+       <table><tr>
+        <td><div class="item">
+          <!-- Your image here -->
+          <center>
+            <img src="static/images/vis-3_00.png" style="width: 80%;" alt="MY ALT TEXT"/>
+          </center>
+          <h3 class="subtitle is-6 has-text-centered" style="margin-bottom: 1.5em;">
+            Random samples from w4a8 quantized and full-precision LDM-8 on LSUN-Churches 256×256. The resolution of each sample
+  is 256 × 256.
+          </h3>
+        </div></td>
+        <td><div class="item">
+          <!-- Your image here -->
+          <center>
+            <img src="static/images/vis-4_00.png" style="width: 80%;" alt="MY ALT TEXT" />
+          </center>
+          <h3 class="subtitle is-6 has-text-centered" style="margin-bottom: 1.5em;">
+            Random samples from w4a8 quantized and full-precision LDM-4 on LSUN-Bedrooms 256×256. The resolution of each sample
+  is 256 × 256.
+         </h3>
+       </div></td>
+      </tr></table>
+
+      <table><tr>
+        <td><div class="item">
+          <!-- Your image here -->
+          <center>
+           <img src="static/images/vis-5_00.png" style="width: 60%;" alt="MY ALT TEXT"/>
+          </center>
+          <h3 class="subtitle is-6 has-text-centered" style="margin-bottom: 1.5em;">
+            Random samples from w4a8 quantized and full-precision DDIM on CIFAR-10 32 × 32. The resolution of each sample is
+    32 × 32.
+          </h3>
+        </div></td>
+        <td><div class="item">
+          <!-- Your image here -->
+          <center>
+           <img src="static/images/vis-6_00.png" style="width: 50%;" alt="MY ALT TEXT"/>
+          </center>
+          <h3 class="subtitle is-6 has-text-centered" style="margin-bottom: 1.5em;">
+            Random samples from w4a8 quantized and full-precision DDIM on CIFAR-10 32 × 32. The resolution of each sample is
+    32 × 32.
+          </h3>
+        </div>
+         <div class="item">
+          <!-- Your image here -->
+          <center>
+            <img src="static/images/vis-7_00.png" style="width:80%;" alt="MY ALT TEXT" />
+          </center>
+          <h3 class="subtitle is-6 has-text-centered" style="margin-bottom: 1.5em;">
+            Random samples from w4a8 quantized and full-precision Stable Diffusion. (Left) prompt: <b><i>"A digital illustration of the Babel
+              tower, detailed, trending in artstation, fantasy vivid colors."</i></b> (Right) prompt: <b><i>"A beautiful castle beside a waterfall in the woods."</i></b> The
+    resolution of each sample is 512 × 512.
+         </h3>
+       </div>
+       </div></td>
+      </tr></table>
+
+    
+    
   </div>
 </div>
 </div>
 </section>
 <!-- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Acceleration Results<br></h2>
+      </div>
+      
+      <div class="columns is-centered has-text-centered" style="color: gray; font-size: small;">
+        <h4> We deploy the quantized Stable Diffusion on the Intel® Xeon® Gold 6248R Processor</h4>
+      </div>
+      <div id="results-carousel">
+
+        <div class="item">
+          <!-- Your image here -->
+          <center>
+            <img src="static/images/acceleration.png" style="width:50%;" alt="MY ALT TEXT" />
+          </center>
+          <h3 class="subtitle is-6 has-text-centered" style="margin-bottom: 1.5em;">
+            Inference analysis of Stable Diffusion with 50 denoising
+time-steps on Intel CPU.
+         </h3>
+       </div>
+
       </div>
     </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
     </div>
-  </section>
-<!--End paper poster -->
+    </section>
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{huang2024tfmqdm,
+  title={TFMQ-DM: Temporal Feature Maintenance Quantization for Diffusion Models}, 
+  author={Yushi Huang and Ruihao Gong and Jing Liu and Tianlong Chen and Xianglong Liu},
+  booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024}
+}
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
