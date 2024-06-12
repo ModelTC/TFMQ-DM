@@ -334,11 +334,13 @@ We thank [OpenVINO](https://github.com/openvinotoolkit/openvino) for providing t
 If you find our TFMQ-DM useful or relevant to your research, please kindly cite our paper:
 
 ```
-@inproceedings{huang2024tfmqdm,
-  title={TFMQ-DM: Temporal Feature Maintenance Quantization for Diffusion Models}, 
-  author={Yushi Huang and Ruihao Gong and Jing Liu and Tianlong Chen and Xianglong Liu},
-  booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2024}
+@InProceedings{Huang_2024_CVPR,
+    author    = {Huang, Yushi and Gong, Ruihao and Liu, Jing and Chen, Tianlong and Liu, Xianglong},
+    title     = {TFMQ-DM: Temporal Feature Maintenance Quantization for Diffusion Models},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {7362-7371}
 }
 
 ```
