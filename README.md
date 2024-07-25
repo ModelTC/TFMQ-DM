@@ -12,7 +12,7 @@
 This is the official implementation of our paper [TFMQ-DM](https://arxiv.org/abs/2311.16503), a  novel training-free framework that achieves a new state-of-the-art result in PTQ of diffusion models, especially under 4-bit weight quantization, and significantly accelerates quantization time. For some hard tasks, e.g., CelebA-HQ, our method reduces the FID score by 6.7.
 <div align=center>
 	<figure class="second">
-	    <img src="./img/sd.png" width="560"/><img src="./img/ldm.png" width="342"/>
+	    <img src="./img/sd.png" width="460"/><img src="./img/ldm.png" width="282"/>
 	</figure>
 </div>
 
