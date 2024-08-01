@@ -100,7 +100,7 @@ After the quantization process, you can generate images you like. You can remove
 
 ```bash
 # ----------- DDIM -----------
-python sample_diffusion_ddim.py --config ddim/configs/cifar10.yml --timesteps 100 --eta 0 --skip_type quad --wq <4 OR 8> --ptq --aq 8 -l <PATH/TO/SAVE/RESULT> --use_aq --cali_save_path <PATH/TO/LOAD/QUANTIZED/MODEL> --max_images 128
+python sample_diffusion_ddim.py --config ddim/configs/cifar10.yml --timesteps 100 --eta 0 --skip_type quad --wq <4 OR 8> --ptq --aq 8 -l <PATH/TO/SAVE/RESULT> --use_aq --cali_ckpt <PATH/TO/LOAD/QUANTIZED/MODEL> --max_images 128
 
 # ----------- LDM ------------
 # LSUN-Bedrooms
