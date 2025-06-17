@@ -1,14 +1,18 @@
 # TFMQ-DM: Temporal Feature Maintenance Quantization for Diffusion Models
+<div align="center">
+	
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
 [![arXiv](https://img.shields.io/badge/TFMQ--DM-2311.16503-b31b1b)](https://arxiv.org/abs/2311.16503)
-[![GitHub Stars](https://img.shields.io/github/stars/ModelTC/TFMQ-DM.svg?style=social&label=Star&maxAge=60)](https://github.com/ModelTC/TFMQ-DM)
 [![arXiv](https://img.shields.io/badge/TemporalFeatureMatters-2407.19547-b31b1b)](https://arxiv.org/abs/2407.19547)
+[![GitHub Stars](https://img.shields.io/github/stars/ModelTC/TFMQ-DM.svg?style=social&label=Star&maxAge=60)](https://github.com/ModelTC/TFMQ-DM)
 
-[[conference](https://arxiv.org/abs/2311.16503)][[journal](https://arxiv.org/abs/2407.19547)][[slides](assets/slides.pdf)][[poster](assets/poster.pdf)][[project page](https://modeltc.github.io/TFMQ-DM/)]
+**[[conference](https://arxiv.org/abs/2311.16503) | [journal](https://arxiv.org/abs/2407.19547) | [slides](assets/slides.pdf) | [poster](assets/poster.pdf) | [project page](https://modeltc.github.io/TFMQ-DM/)]**
 
 [Yushi Huang*](https://github.com/Harahan), [Ruihao Gong*](https://xhplus.github.io/), [Jing Liu](https://jing-liu.com/), [Tianlong Chen](https://tianlong-chen.github.io/), [Xianglong Liu📧](https://xlliu-beihang.github.io/)
 
 (* denotes equal contribution, 📧 denotes corresponding author.)
+
+</div>
 
 This is the official implementation of our paper [TFMQ-DM](https://arxiv.org/abs/2311.16503), a  novel training-free framework that achieves a new state-of-the-art result in PTQ of diffusion models, especially under 4-bit weight quantization, and significantly accelerates quantization time. For some hard tasks, e.g., CelebA-HQ, our method reduces the FID score by 6.7.
 <div align=center>
@@ -125,13 +129,20 @@ python txt2img.py --prompt <PROMPT. e.g. "A white dog."> --plms --no_grad_ckpt -
 
 Our code was developed based on [ddim](https://github.com/ermongroup/ddim), [latent-diffusion](https://github.com/CompVis/latent-diffusion) and [stable-diffusion](https://github.com/CompVis/stable-diffusion). We referred to [BRECQ](https://github.com/yhhhli/BRECQ) and [Q-Diffusion](https://github.com/Xiuyu-Li/q-diffusion) for the blockwise calibration implementation.
 
-We thank [OpenVINO](https://github.com/openvinotoolkit/openvino) for providing the framework to deploy our quantized model and measure acceleration. Moreover, we also thank [torch-fidelity](https://github.com/toshas/torch-fidelity), [guided-diffusion](https://github.com/openai/guided-diffusion), and [clip-score](https://github.com/Taited/clip-score) for IS, sFID, FID and CLIP score computation.
+We thank [OpenVINO](https://github.com/openvinotoolkit/openvino) for providing the framework to deploy our quantized model and measure acceleration. Moreover, we also thank [torch-fidelity](https://github.com/toshas/torch-fidelity), [guided-diffusion](https://github.com/openai/guided-diffusion), and [clip-score](https://github.com/Taited/clip-score) for IS, sFID, FID, and CLIP score computation.
 
 ## Citation
 
-If you find our TFMQ-DM useful or relevant to your research, please kindly cite our paper:
+If you find our TFMQ-DM or Temporal Feature Matters useful or relevant to your research, please kindly cite our paper:
 
 ```
+@article{Huang_2025_TPAMI,
+    title={Temporal Feature Matters: A Framework for Diffusion Model Quantization},
+    author={Yushi Huang and Ruihao Gong and Xianglong Liu and Jing Liu and Yuhang Li and Jiwen Lu and Dacheng Tao},
+    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+    year={2025},
+}
+
 @InProceedings{Huang_2024_CVPR,
     author    = {Huang, Yushi and Gong, Ruihao and Liu, Jing and Chen, Tianlong and Liu, Xianglong},
     title     = {TFMQ-DM: Temporal Feature Maintenance Quantization for Diffusion Models},
@@ -140,12 +151,4 @@ If you find our TFMQ-DM useful or relevant to your research, please kindly cite 
     year      = {2024},
     pages     = {7362-7371}
 }
-
-@article{huang2025temporalfeaturemattersframework,
-    title={Temporal Feature Matters: A Framework for Diffusion Model Quantization},
-    author={Yushi Huang and Ruihao Gong and Xianglong Liu and Jing Liu and Yuhang Li and Jiwen Lu and Dacheng Tao},
-    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-    year={2025},
-}
-
 ```
