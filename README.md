@@ -20,6 +20,8 @@ This is the official implementation of our paper [TFMQ-DM](https://arxiv.org/abs
 
 ## News
 
+* **Apr 5, 2024**: 🌟 Our journal paper has been accepted by TPAMI 2025! 🎉 Cheers!
+
 * **Apr 5, 2024**: 🌟 Our paper has been selected as a **Highlight Poster** at CVPR 2024 **(top 2.8%)**! 🎉 Cheers!
 
 * **Mar 31, 2024**: 🔥 We release our Python code for quantizing all the models presented in our paper. Have a try!
@@ -32,7 +34,7 @@ This is the official implementation of our paper [TFMQ-DM](https://arxiv.org/abs
 
 The Diffusion model, a prevalent framework for image generation, encounters significant challenges in terms of broad applicability due to its extended inference times and substantial memory requirements. Efficient Post-training Quantization (PTQ) is pivotal for addressing these issues in traditional models. Different from traditional models, diffusion models heavily depend on the time-step $t$ to achieve satisfactory multi-round denoising. Usually, $t$ from the finite set \{ $1, \ldots, T$ \} is encoded to a temporal feature by a few modules irrespective of the sampling data. However, existing PTQ methods do not optimize these modules separately. They adopt inappropriate reconstruction targets and complex calibration methods, resulting in a severe disturbance of the temporal feature and denoising trajectory, as well as a low compression efficiency. To solve these, we propose a Temporal Feature Maintenance Quantization (TFMQ) framework building upon a Temporal Information Block which is just related to the time-step $t$ and unrelated to the sampling data. Powered by the pioneering block design, we devise temporal information aware reconstruction (TIAR) and finite set calibration (FSC) to align the full-precision temporal features in a limited time. Equipped with the framework, we can maintain the most temporal information and ensure the end-to-end generation quality. Extensive experiments on various datasets and diffusion models prove our state-of-the-art results. 
 
-## Quick Started
+## Quick Start
 
 After cloning the repository, you can follow these steps to complete the model's quantization inference process.
 
@@ -72,7 +74,7 @@ In this part, we will first generate some calibration data before quantizing. Al
 
 If you want to quantize your diffusion models on multiple GPUs, add `--multi_gpu` to the corresponding command, except for `DDIM`. Additionally, you can remove `--use_aq`，`--aq 8` to cancel activation quantization.
 
-Additionally, before quantizing Stable Diffusion, you still need to prepare for some prompts. For example, you can download [MS-COCO](https://cocodataset.org/#download), and use the path of `captions_train*.json` as `<PATH/TO/LOAD/DATA>` in the following command. We would use 128 prompts within `captions_train*.json` as a part of calibration data.
+Additionally, before quantizing Stable Diffusion, you still need to prepare some prompts. For example, you can download [MS-COCO](https://cocodataset.org/#download), and use the path of `captions_train*.json` as `<PATH/TO/LOAD/DATA>` in the following command. We would use 128 prompts within `captions_train*.json` as a part of the calibration data.
 
 ```bash
 # ----------- DDIM -----------
@@ -136,6 +138,13 @@ If you find our TFMQ-DM useful or relevant to your research, please kindly cite 
     month     = {June},
     year      = {2024},
     pages     = {7362-7371}
+}
+
+@article{huang2025temporalfeaturemattersframework,
+    title={Temporal Feature Matters: A Framework for Diffusion Model Quantization},
+    author={Yushi Huang and Ruihao Gong and Xianglong Liu and Jing Liu and Yuhang Li and Jiwen Lu and Dacheng Tao},
+    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+    year={2025},
 }
 
 ```
