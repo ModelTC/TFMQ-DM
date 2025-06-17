@@ -21,7 +21,7 @@ This is the official implementation of our paper [TFMQ-DM](https://arxiv.org/abs
 
 ## News
 
-* **Apr 5, 2024**: 🌟 Our journal paper has been accepted by TPAMI 2025! 🎉 Cheers!
+* **Jun 17, 2025**: 🌟 Our journal paper has been accepted by TPAMI 2025! 🎉 Cheers!
 
 * **Apr 5, 2024**: 🌟 Our paper has been selected as a **Highlight Poster** at CVPR 2024 **(top 2.8%)**! 🎉 Cheers!
 
