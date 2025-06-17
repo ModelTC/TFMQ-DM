@@ -2,6 +2,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
 [![arXiv](https://img.shields.io/badge/TFMQ--DM-2311.16503-b31b1b)](https://arxiv.org/abs/2311.16503)
 [![GitHub Stars](https://img.shields.io/github/stars/ModelTC/TFMQ-DM.svg?style=social&label=Star&maxAge=60)](https://github.com/ModelTC/TFMQ-DM)
+[![arXiv](https://img.shields.io/badge/TemporalFeatureMatters-2407.19547-b31b1b)](https://arxiv.org/abs/2407.19547)
 
 [[paper](https://arxiv.org/abs/2311.16503)][[slides](assets/slides.pdf)][[poster](assets/poster.pdf)][[project page](https://modeltc.github.io/TFMQ-DM/)]
 
