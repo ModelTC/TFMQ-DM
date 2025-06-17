@@ -4,7 +4,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/ModelTC/TFMQ-DM.svg?style=social&label=Star&maxAge=60)](https://github.com/ModelTC/TFMQ-DM)
 [![arXiv](https://img.shields.io/badge/TemporalFeatureMatters-2407.19547-b31b1b)](https://arxiv.org/abs/2407.19547)
 
-[[paper](https://arxiv.org/abs/2311.16503)][[slides](assets/slides.pdf)][[poster](assets/poster.pdf)][[project page](https://modeltc.github.io/TFMQ-DM/)]
+[[conference](https://arxiv.org/abs/2311.16503)][[journal](https://arxiv.org/abs/2407.19547)][[slides](assets/slides.pdf)][[poster](assets/poster.pdf)][[project page](https://modeltc.github.io/TFMQ-DM/)]
 
 [Yushi Huang*](https://github.com/Harahan), [Ruihao Gong*](https://xhplus.github.io/), [Jing Liu](https://jing-liu.com/), [Tianlong Chen](https://tianlong-chen.github.io/), [Xianglong Liu📧](https://xlliu-beihang.github.io/)
 
