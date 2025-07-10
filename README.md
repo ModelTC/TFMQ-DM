@@ -40,7 +40,7 @@ This is the official implementation of our paper [TFMQ-DM](https://arxiv.org/abs
 
 <img src="./img/overview.png" width="100%"/>
 
-<h align="justify"><strong>Overall pipeline of the proposed TFMQ-DM</strong>. It's built upon a Temporal Information Block, which is just related to the time-step $t$ and unrelated to the sampling data. Powered by the pioneering block design, we devise temporal information aware reconstruction (TIAR) and finite set calibration (FSC) to align the full-precision temporal features in a limited time.</h>
+<h align="justify"><strong>Overall pipeline of the proposed TFMQ-DM.</strong> It's built upon a Temporal Information Block, which is just related to the time-step $t$ and unrelated to the sampling data. Powered by the pioneering block design, we devise temporal information aware reconstruction (TIAR) and finite set calibration (FSC) to align the full-precision temporal features in a limited time.</h>
 
 </div>    
 
