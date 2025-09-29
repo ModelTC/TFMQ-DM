@@ -142,11 +142,16 @@ We thank [OpenVINO](https://github.com/openvinotoolkit/openvino) for providing t
 If you find our TFMQ-DM or Temporal Feature Matters useful or relevant to your research, please kindly cite our paper:
 
 ```
-@article{Huang_2025_TPAMI,
-    title={Temporal Feature Matters: A Framework for Diffusion Model Quantization},
-    author={Yushi Huang and Ruihao Gong and Xianglong Liu and Jing Liu and Yuhang Li and Jiwen Lu and Dacheng Tao},
-    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-    year={2025},
+@ARTICLE{11068163,
+  	author={Huang, Yushi and Gong, Ruihao and Liu, Xianglong and Liu, Jing and Li, Yuhang and Lu, Jiwen and Tao, Dacheng},
+  	journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  	title={Temporal Feature Matters: A Framework for Diffusion Model Quantization}, 
+  	year={2025},
+  	volume={47},
+  	number={10},
+  	pages={8823-8837},
+  	keywords={Diffusion models;Quantization (signal);Maintenance;Noise reduction;Computational modeling;Training;Calibration;Image reconstruction;Trajectory;Power capacitors;Post-training quantization (PTQ);diffusion model;temporal feature;hardware acceleration},
+  	doi={10.1109/TPAMI.2025.3585692}
 }
 
 @InProceedings{Huang_2024_CVPR,
